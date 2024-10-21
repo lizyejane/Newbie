@@ -27,3 +27,15 @@ my_str =my_str[:my_str.index(".")]   # 위에서 받은 my_str은 naver.com이�
 print(my_str)                        # naver
 password = my_str[:3] + str(len(my_str)) + str(my_str.count("e")) + "!"
 print("{0}의 비밀번호는 {1}입니다.".format(url, password))
+
+'''
+셀프체크)
+영어 문장이 주어졌을 대 첫 번째 글자는 대문자로, 나머지 글자는 모두 소문자로 변환하는 프로그램을 작성하세요.
+
+#주어진 문장 : 
+# the early bird catches the worm.
+# Actions speak louder than words.
+# Practice makes perfact.'''
+
+sentence = "the early bird catches the worm."
+print(sentence[0].upper() + sentence[1:].lower())
